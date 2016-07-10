@@ -115,19 +115,6 @@ var app = {
 		}
 		
 		return true;
-		
-		
-// 		if (this.selectedNetwork in this.networks) { // Valid network
-// 			app.hideError();
-// 			
-// 			if (code.length == 7) { // Valid code
-// 				$("#submit-button").prop("disabled", false);
-// 				return;
-// 			}
-// 		} else {
-// 			app.showError("Select a network.");
-// 		}
-// 		$("#submit-button").prop("disabled", true);
 	},
 	
 	// Display or hide error message
