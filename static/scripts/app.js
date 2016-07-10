@@ -48,6 +48,7 @@ var app = {
 		// Clicking "Log In With Comcast" button, open new window to comcast login
 		$("#login-button").click(function() {
 			$("#login-next").removeClass("hidden");
+			var win = window.open(LOGIN_URL, "login-window");
 		});
 		
 		// When opening code panel, focus on input
