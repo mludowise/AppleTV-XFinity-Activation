@@ -1,4 +1,4 @@
-const LOGIN_URL = "http://login.comcast.net";
+const LOGIN_URL = "https://login.comcast.net";
 
 $(document).ready(function() {
 	app.init();
@@ -48,12 +48,6 @@ var app = {
 		// Clicking "Log In With Comcast" button, open new window to comcast login
 		$("#login-button").click(function() {
 			$("#login-next").removeClass("hidden");
-			var win = window.open(LOGIN_URL, "login-window");
-			
-			// TODO: If using https, detect when URL changes and close window
-// 			window.setInterval(function() {
-// 				console.log(win.location.href);
-// 			}, 1000);
 		});
 		
 		// When opening code panel, focus on input
@@ -115,19 +109,6 @@ var app = {
 		}
 		
 		return true;
-		
-		
-// 		if (this.selectedNetwork in this.networks) { // Valid network
-// 			app.hideError();
-// 			
-// 			if (code.length == 7) { // Valid code
-// 				$("#submit-button").prop("disabled", false);
-// 				return;
-// 			}
-// 		} else {
-// 			app.showError("Select a network.");
-// 		}
-// 		$("#submit-button").prop("disabled", true);
 	},
 	
 	// Display or hide error message
