@@ -11,6 +11,9 @@ var app = {
 	
 	init: function() {
 		
+		// Empty code input field (in case user hit back)
+		$("#activation-code").val("");
+		
 		// Load networks from JSON file
 		$.getJSON("static/data/networks.json", function(json) {
 			
