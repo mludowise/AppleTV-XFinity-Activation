@@ -1,0 +1,70 @@
+{
+	"networks": [
+		{
+			"id": "abc",
+			"name": "ABC",
+			"image": "static/images/abc.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=ABC&domain_name=watchabc.com&redirect_url=http%3A%2F%2Fwww.watchabc.com%2Factivate%3Fdevice%3Dappletv"
+		},
+		{
+			"id": "ae",
+			"name": "A&E",
+			"image": "static/images/ae.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=AETV&domain_name=aetv.com&redirect_url=http%3A%2F%2Fwww.aetv.com%2Factivate%3Fdevice%3Dappletv"
+		},
+		{
+			"id": "amc",
+			"name": "AMC",
+			"image": "static/images/amc.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=AMC&domain_name=amc.com&redirect_url=http%3A%2F%2Fwww.amc.com%2Factivate%3Fdevice%3Dappletv"
+		},
+		{
+			"id": "cooking",
+			"name": "Cooking Channel",
+			"image": "static/images/cooking.png",
+			"url": "https://sp.auth.adobe.com/api/v1/authenticate?reg_code=XXXXXXX&noflash=true&mso_id=Comcast_SSO&requestor_id=CookingChannelTV&domain_name=watch.cookingchanneltv.com&redirect_url=http%3A%2F%2Fwatch.cookingchanneltv.com%2Factivate%2Fthanks.html"
+		},
+		{
+			"id": "diy",
+			"name": "DIY Network",
+			"image": "static/images/diy.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=DIYNetwork&domain_name=adobe.com&redirect_url=http%3A%2F%2Fwatch.diynetwork.com%2Factivate%2Fthanks.html"
+		},
+		{
+			"id": "food",
+			"name": "Food Network",
+			"image": "static/images/food.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=FoodNetwork&domain_name=watch.foodnetwork.com&redirect_url=http%3A%2F%2Fwatch.foodnetwork.com%2Factivate%2Fthanks.html"
+		},
+		{
+			"id": "fyi",
+			"name": "FYI",
+			"image": "static/images/fyi.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=FYI&domain_name=fyi.tv&redirect_url=http%3A%2F%2Fwww.fyi.tv%2Factivate%3Fdevice%3Dappletv"
+		},
+		{
+			"id": "hgtv",
+			"name": "HGTV",
+			"image": "static/images/hgtv.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=HGTV&domain_name=watch.hgtv.com&redirect_url=http%3A%2F%2Fwatch.hgtv.com%2Factivate%2Fthanks.html"
+		},
+		{
+			"id": "history",
+			"name": "History Channel",
+			"image": "static/images/history.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=HISTORY&domain_name=history.com&redirect_url=http%3A%2F%2Fwww.history.com%2Factivate%3Fdevice%3Dappletv"
+		},
+		{
+			"id": "lifetime",
+			"name": "Lifetime",
+			"image": "static/images/lifetime.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=LIFETIME&domain_name=mylifetime.com&redirect_url=http%3A%2F%2Fwww.mylifetime.com%2Factivate%3Fdevice%3Dappletv"
+		},
+		{
+			"id": "travel",
+			"name": "Travel Channel",
+			"image": "static/images/travel.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=TravelChannel&domain_name=watch.travelchannel.com&redirect_url=http%3A%2F%2Fwatch.travelchannel.com%2Factivate%2Fthanks.html%23appletv%26Travel"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+.logos img {
+	height: 24px;
+}
+
+.navbar-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    text-align: center;
+}

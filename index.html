@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Comcast XFinity activation for AppleTV apps which don't support it by default.">
+		<meta name="keywords" content="Comcast, XFinity, Apple TV, ABC, AMC, AETV, Cooking Channel, DIY, Food Network, FYI, History Channel, HGTV, Lifetime, Travel Channel">
+		<meta name="author" content="Mel Ludowise">
+		<!--link rel="icon" href="static/images/favicon.ico"-->
+		<!--link rel="apple-touch-icon" href="static/images/apple-touch-icon-60x60.png"-->
+		<title>Apple TV : Xfinity Activation</title>
+		<!--link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css"-->
+		<link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/css/styles.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header navbar-center">
+					<a class="navbar-brand" href="#">
+						<span class="logos"><img src="static/images/appletv.svg" alt="Apple TV" class="appletv-logo"> + <img src="static/images/xfinity.svg" alt="Xfinity" class="xfinity-logo"></span> Activation
+					</a>
+				<p class="navbar-text navbar-right"><i class="fa fa-lg fa-code-fork"></i> <a href="" target="_blank">Fork me on GitHub!</a></p>
+				</div>
+			</div>
+		</nav>
+		<main class="container">
+			<div aria-multiselectable="true" class="panel-group" id="accordion" role=
+			"tablist">
+				<div class="panel panel-default">
+					<div class="panel-heading" id="login-panel-heading" role="tab">
+						<h4 class="panel-title"><a aria-controls="login-panel-body" aria-expanded="true"
+						data-parent="#accordion" data-toggle="collapse" href="#login-panel-body" role=
+						"button">1. Log In With Comcast</a></h4>
+					</div>
+					<div aria-labelledby="login-panel-heading" class="panel-collapse collapse in" id=
+					"login-panel-body" role="tabpanel">
+						<div class="panel-body">
+							<div class="form-group">
+								<button id="login-button" class="btn btn-primary">Log In With Comcast &nbsp; <i class="fa fa-external-link"></i></button>
+								<p class="help-block">Log in with your Comcast Xfinity credentials and then close the window.</p>
+							</div>
+							<button id="login-next" class="btn btn-default hidden" data-toggle="collapse" data-parent="#accordion" href="#network-panel-body" aria-expanded="false" aria-controls="network-panel-body">Continue</button>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" id="network-panel-heading" role="tab">
+						<h4 class="panel-title"><a aria-controls="network-panel-body" aria-expanded="false"
+						data-parent="#accordion" data-toggle="collapse" href="#network-panel-body" role=
+						"button">2. Select a Network</a></h4>
+					</div>
+					<div aria-labelledby="network-panel-heading" class="panel-collapse collapse" id=
+					"network-panel-body" role="tabpanel">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 network-container">
+									<a class="thumbnail network" role="button" data-toggle="collapse" data-parent="#accordion" href="#code-panel-body" aria-expanded="false" aria-controls="code-panel-body">
+										<img/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" id="code-panel-heading" role="tab">
+						<h4 class="panel-title"><a aria-controls="code-panel-body" aria-expanded="false"
+						class="collapsed" data-parent="#accordion" data-toggle="collapse" href=
+						"#code-panel-body" role="button">3. Enter Activation Code</a></h4>
+					</div>
+					<div aria-labelledby="code-panel-heading" class="panel-collapse collapse" id=
+					"code-panel-body" role="tabpanel">
+						<div class="panel-body">
+							<form id="activation-form">
+								<div class="form-group">
+									<label for="activation-code" class="sr-only">Activation Code</label>
+									<input id="activation-code" type="text" class="form-control" placeholder="Activation Code"/>
+								</div>
+								<span id="error-message" class="text-danger collapse" aria-hidden="true"></span>
+								<button id="submit-button" type="submit" class="btn btn-primary" disabled>Activate</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text navbar-center">Made with <i class="fa fa-heart" aria-label="love"></i> by <a href="https://github.com/mludowise" target="_blank">Mel Ludowise</a>.</p>
+			</div>
+		</nav>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js"></script>
+		<script src="static/scripts/app.js"></script>
+	</body>
+</html>
