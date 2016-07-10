@@ -22,7 +22,7 @@
 			"id": "cooking",
 			"name": "Cooking Channel",
 			"image": "static/images/cooking.png",
-			"url": "https://sp.auth.adobe.com/api/v1/authenticate?reg_code=XXXXXXX&noflash=true&mso_id=Comcast_SSO&requestor_id=CookingChannelTV&domain_name=watch.cookingchanneltv.com&redirect_url=http%3A%2F%2Fwatch.cookingchanneltv.com%2Factivate%2Fthanks.html"
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=CookingChannelTV&domain_name=watch.cookingchanneltv.com&redirect_url=http%3A%2F%2Fwatch.cookingchanneltv.com%2Factivate%2Fthanks.html"
 		},
 		{
 			"id": "diy",
