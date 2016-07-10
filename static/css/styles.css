@@ -1,4 +1,9 @@
-.logos img {
+.appletv-logo {
+	height: 22px;
+	margin-bottom: 4px;
+}
+
+.xfinity-logo {
 	height: 24px;
 }
 
@@ -7,4 +12,9 @@
     margin-right: auto;
     float: none;
     text-align: center;
+}
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
+    color: inherit;
 }
