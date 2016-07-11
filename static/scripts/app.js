@@ -46,6 +46,9 @@ var app = {
 				var valid = app.validate();
 				$("#submit-button").prop("disabled", !valid);
 			});
+			
+			// Check if this page is loading after a successful authentication
+			app.checkForSuccess();
 		});
 		
 		// Clicking "Log In With Comcast" button, open new window to comcast login
@@ -83,6 +86,22 @@ var app = {
 				$("#submit-button").prop("disabled", true);
 			}
 		});
+		
+		// When clicking on "Activate Another Network"
+		$("#activate-again").click(function() {
+			$("#network-panel-body").collapse({parent: "#accordion"});
+			$("#success-modal").modal('hide');
+		});
+	},
+	
+	// Check if the page is loaded after a successful authentication
+	checkForSuccess: function() {
+		var params = $.deparam.querystring();
+		var network = params.success;
+		if (network != undefined && network in app.networks) {
+			$("#authenticated-network").text(app.networks[network].name);
+			$("#success-modal").modal();
+		}
 	},
 	
 	// Check if the user has selected a network and entered a valid code

@@ -19,6 +19,24 @@
 		<link rel="stylesheet" href="static/css/styles.css">
 	</head>
 	<body>
+		<div class="modal fade" role="dialog" tabindex="-1" id="success-modal" aria-labelledby="success-modal-label">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button aria-label="Close" class="close" data-dismiss="modal" type=
+						"button"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="success-modal-label"><span id="authenticated-network">Network Name</span> Was Successfully Activated</h4>
+					</div>
+					<div class="modal-body">
+						<p>Your Apple TV should update momentarily.</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" data-dismiss="modal" type=
+						"button">Close</button> <button class="btn btn-primary" type="button" id="activate-again">Activate Another Network</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 		<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
@@ -112,7 +130,7 @@
 		</nav>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.ba-bbq/1.2.1/jquery.ba-bbq.min.js"></script>
 		<script src="static/scripts/app.js"></script>
 	</body>
 </html>
