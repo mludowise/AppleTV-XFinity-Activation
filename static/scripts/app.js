@@ -1,4 +1,9 @@
 const LOGIN_URL = "https://login.comcast.net";
+const AUTH_BASE_URL = "https://api.auth.adobe.com/api/v1/authenticate";
+const AUTH_PARAMS = {
+	noflash: true,
+	mso_id: "Comcast_SSO"
+};
 
 $(document).ready(function() {
 	app.init();
@@ -99,6 +104,10 @@ var app = {
 		var params = $.deparam.querystring();
 		var network = params.success;
 		if (network != undefined && network in app.networks) {
+			// Remove params from URL
+			history.pushState({}, '', baseUrl(window.location.href));
+			
+			// Show success modals
 			$("#authenticated-network").text(app.networks[network].name);
 			$("#success-modal").modal();
 		}
@@ -151,9 +160,35 @@ var app = {
 	
 	// Open URL to activate for the selected network
 	openActivationURL: function() {
-		var url = app.networks[app.selectedNetwork].url;
 		var code = $("#activation-code").val().toUpperCase();
-		url = url.replace("*******", code);
+		var networkConfig = app.networks[app.selectedNetwork];
+		var url = "";
+		
+		// Check if this network has a requestor_id & domain_name that can be used with Xfinity's auth base URL
+		var requestorId = networkConfig.requestor_id;
+		var domainName = networkConfig.domain_name;
+		if (requestorId != undefined && domainName != undefined) {
+			// Prepare to redirect back to this page
+			var redirectParams = { success: app.selectedNetwork };
+			var redirectUrl = baseUrl(window.location.href);
+			redirectUrl += "?" + $.param(redirectParams);
+			
+			var params = $.extend(AUTH_PARAMS, {
+				reg_code: code,
+				requestor_id: requestorId,
+				domain_name: domainName,
+				redirect_url: redirectUrl
+			});
+			url = AUTH_BASE_URL + "?" + $.param(params);
+		} else {
+			url = networkConfig.url;
+			url = url.replace("*******", code);
+		}
+		
 		window.location.href = url;
 	}
+}
+
+function baseUrl(url) {
+	return url.split("?")[0];
 }
