@@ -78,6 +78,13 @@ var app = {
 			e.preventDefault();
 			
 			if (app.validate()) {
+				// Track analytics of which network is submitted
+				if (ga != undefined) {
+					ga('send', 'event', "Submit", "activate", app.selectedNetwork, {
+						nonInteraction: true
+					});
+				}
+				
 				app.openActivationURL();
 			} else {
 				$("#submit-button").prop("disabled", true);
