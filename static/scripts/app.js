@@ -80,12 +80,14 @@ var app = {
 			if (app.validate()) {
 				// Track analytics of which network is submitted
 				if (ga != undefined) {
-					ga('send', 'event', "Submit", "activate", app.selectedNetwork, {
-						nonInteraction: true
+					ga('send', 'event', "Activate", app.selectedNetwork, {
+						hitCallback: function() {
+							app.openActivationURL();
+						}
 					});
+				} else {
+					app.openActivationURL();
 				}
-				
-				app.openActivationURL();
 			} else {
 				$("#submit-button").prop("disabled", true);
 			}
