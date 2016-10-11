@@ -19,6 +19,12 @@
 			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=AMC&domain_name=amc.com&redirect_url=http%3A%2F%2Fwww.amc.com%2Factivate%3Fdevice%3Dappletv"
 		},
 		{
+			"id": "bbca",
+			"name": "BBC America",
+			"image": "static/images/bbca.png",
+			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=BBCA&domain_name=bbcamerica.com&redirect_url=http%3A%2F%2Fwww.bbcamerica.com"
+		},
+		{
 			"id": "cooking",
 			"name": "Cooking Channel",
 			"image": "static/images/cooking.png",
