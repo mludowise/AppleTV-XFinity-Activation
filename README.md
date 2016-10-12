@@ -5,6 +5,7 @@ Allows AppleTV users to authenticate via Comcast Xfinity for the following netwo
 * ABC
 * A&E
 * AMC
+* BBC America
 * Cooking Channel
 * DIY Network
 * Food Network
