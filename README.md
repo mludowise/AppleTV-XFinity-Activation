@@ -25,6 +25,6 @@ This project is based on the information provided by:
 Copyright and License
 ---------------------
 
-Copyright 2016 [Melissa Ludowise](https://github.com/mludowise)
+Copyright 2017 [Melissa Ludowise](https://github.com/mludowise)
 
 Code released under the MIT License.
