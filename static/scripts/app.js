@@ -94,11 +94,9 @@ var app = {
 			app.showError("Select a network.");
 			return false;
 		}
-
-		var codeLength = this.networks[this.selectedNetwork].codeLength;
-
-		if (code.length > codeLength) {
-			app.showError("Activation codes should be " + codeLength + " characters.");
+		
+		if (code.length > 7) {
+			app.showError("Activation codes should be 7 characters.");
 			return false;
 		}
 		
@@ -109,8 +107,8 @@ var app = {
 		}
 		
 		app.hideError();
-
-		if (code.length != codeLength) {
+		
+		if (code.length != 7) {
 			return false;
 		}
 		
