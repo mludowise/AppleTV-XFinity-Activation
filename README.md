@@ -13,7 +13,6 @@ Allows AppleTV users to authenticate via Comcast Xfinity for the following netwo
 * HGTV
 * History Channel
 * Lifetime
-* Starz
 * Travel Channel
 
 Unfortunately, it will not work for Nick Jr, Discovery Go, Comedy Central, Starz, MTV, or other Viacom owned networks.
