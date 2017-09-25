@@ -67,12 +67,6 @@
 			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=LIFETIME&domain_name=mylifetime.com&redirect_url=http%3A%2F%2Fwww.mylifetime.com%2Factivate%3Fdevice%3Dappletv"
 		},
 		{
-			"id": "starz",
-			"name": "Starz",
-			"image": "static/images/starz.png",
-			"url": "https://api.auth.adobe.com/api/v1/authenticate?reg_code=*******&noflash=true&mso_id=Comcast_SSO&requestor_id=starzplay&domain_name=starzplay.com&redirect_url=https://idp.starz.com/play/activate/AffiliateAuthFinished/FG9z/Comcast_SSO"
-		},
-		{
 			"id": "travel",
 			"name": "Travel Channel",
 			"image": "static/images/travel.png",
